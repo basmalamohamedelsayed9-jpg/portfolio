@@ -160,19 +160,46 @@ nav ul {
 }
 
 .about {
-    display: flex;
+   display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: start;
-    gap: 25px;
+    gap: 5px;
     padding: 60px 40px;
     margin: 30px 10px;
     line-height: 1.5em;
+    width: 60%;
 }
 
 .about h2 {
     color: #8B5CF6;
 }
+.edu {
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 10px;
+}
+
+.edu .h2 {
+    color: #8B5CF6;
+    font-size: 36px;
+    font-weight: bolder;
+}
+.edu p span {
+    color: #6d3ee6;
+    font-size: larger;
+}
+
+.section-divider {
+    width: 180px;
+    height: 4px;
+    margin: 70px auto;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #8B5CF6, #22D3EE);
+}
+
 
 .skills {
     padding: 100px 10%;
