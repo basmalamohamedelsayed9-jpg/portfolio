@@ -349,7 +349,7 @@ nav ul {
 }
 
  .containerCard .pro:hover{
-      transform: scale(1.1);
+      transform: scale(1.03);
     border-color: #8B5CF6;
     backdrop-filter: blur(10px);
 
