@@ -14,6 +14,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "yMRWX2gkPyeG81I23",
+      });
+   })();
+</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -130,7 +144,7 @@
                 <p>Problem Solving & OOP Basics</p>
             </div>
             <div class="card">
-                <img src="Untitled.png" alt="">
+                <!-- <img src="Untitled.png" alt=""> -->
                 <h4>C++</h4>
                 <p>Algorithms & Data Structre</p>
             </div>
@@ -300,11 +314,11 @@
             <form>
 
 
-                 <input type="text" placeholder="Name">
+                 <input type="text" placeholder="Name" id="name" required>
                 <!-- <input type="tel" placeholder="phone number"> -->
-                <input type="email" placeholder="email">
+                <input type="email" placeholder="email" id="email" required>
                 <!-- <input class="final_input" type="text" placeholder="message"> -->
-                 <textarea name="message" id="" placeholder="Message"></textarea>
+                 <textarea name="message" id="message" placeholder="Message" required></textarea>
                 <button class="send">SEND</button>
 
             </form>
