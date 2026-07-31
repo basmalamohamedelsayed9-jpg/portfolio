@@ -2,7 +2,7 @@ function sendEmail() {
     const Data = {
         to_email: 'basmala946614@gmail.com',
         from_name: document.querySelector("#name").value,
-        from_email: 'basmala946614@gmail.com',
+        from_email: document.getElementById("email").value,
         subject: "contact",
         message: `
         name:${document.getElementById("name").value}
@@ -13,6 +13,7 @@ function sendEmail() {
     emailjs.send("service_3pspunq","template_65xhxv3",Data)
     .then((response) => {
         alert("success");
+         document.getElementById("form").reset();
     })
     .catch((error)=>{
          console.log(error);
@@ -22,4 +23,5 @@ function sendEmail() {
 document.getElementById("btn").addEventListener("click",(e)=>{
       e.preventDefault();
     sendEmail();
+  
 })
