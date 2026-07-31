@@ -4,10 +4,10 @@ function sendEmail() {
         from_name: document.querySelector("#name").value,
         from_email: 'basmala946614@gmail.com',
         subject: "contact",
-        mesaage: `
-        name:${document.getElementById("name")}
-        email:${document.getElementById("email")}
-        message:${document.getElementById("message")}
+        message: `
+        name:${document.getElementById("name").value}
+        email:${document.getElementById("email").value}
+        message:${document.getElementById("message").value}
                         `
     };
     emailjs.send("service_3pspunq","template_65xhxv3",Data)
@@ -15,9 +15,11 @@ function sendEmail() {
         alert("success");
     })
     .catch((error)=>{
-        alert("contact error"+error)
+         console.log(error);
+        alert("contact error")
     })
 }
-document.getElementById("btn").addEventListener("click",()=>{
+document.getElementById("btn").addEventListener("click",(e)=>{
+      e.preventDefault();
     sendEmail();
 })
